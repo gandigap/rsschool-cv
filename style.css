@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Roboto-Regular";
+
+  src: url("assets/fonts/Century Gothic.ttf") format("truetype");
+}
+body {
+  background-color: grey;
+  text-align: center;
+  color: white;
+  font-family: "Century Gothic";
+}
