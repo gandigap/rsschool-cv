@@ -14,10 +14,10 @@
 
 
 ## Skills
--***Programming Languages*** : HTML | CSS | Java | JavaScript | C 
--***VCS*** : Git
--***IDE*** : IntelliJ IDEA | Visual Studio Code
--***Other software*** : Adobe Illustrator | Lightroom |Photoshop
+- ***Programming Languages*** : HTML | CSS | Java | JavaScript | C 
+- ***VCS*** : Git
+- ***IDE*** : IntelliJ IDEA | Visual Studio Code
+- ***Other software*** : Adobe Illustrator | Lightroom |Photoshop
 
 
 ## Code examples
