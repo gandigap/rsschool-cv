@@ -41,4 +41,4 @@ __Online Course__: Javarush (31 lvl), Automated Testing (EPAM), Java (EPAM)
 
 
 ### English
-My level is A1. I am constantly improving my English. I read books, watch you-tube channels and use applications. Also I took a ***Pre-Intermediate English**** course from the organization __"Erasmus Student Network Belarus"__.
+My level is A2-B1. I am constantly improving my English. I read books, watch you-tube channels and use applications. Also I took a ***Pre-Intermediate English**** course from the organization __"Erasmus Student Network Belarus"__.
