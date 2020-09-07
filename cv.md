@@ -2,11 +2,11 @@
 ---
 [![My photo](https://i.yapx.ru/I2Z71.png)](https://nodesource.com/products/nsolid)
 ## Contact:
-  - _Phone_: +375447207433
-  - _email_: igor.simatic@gmail.com
-  - _LinkedIn_: https://www.linkedin.com/in/ihar-berasneu-4051681a1/
-  - _Telegram_: https://t.me/BIN_12345
-  - _GitHub_: https://github.com/gandigap
+- _Phone_: +375447207433
+- _email_: igor.simatic@gmail.com
+- _LinkedIn_: [https://www.linkedin.com/in/ihar-berasneu-4051681a1/](https://www.linkedin.com/in/ihar-berasneu-4051681a1/)  
+- _Telegram_:  [https://t.me/BIN_12345](https://t.me/BIN_12345)
+- _GitHub_:  [https://github.com/gandigap](https://github.com/gandigap)
  
 
 ## Summary
@@ -14,10 +14,10 @@
 
 
 ## Skills
-***Programming Languages*** : HTML | CSS | Java | JavaScript | C 
-***VCS*** : Git
-***IDE*** : IntelliJ IDEA | Visual Studio Code
-***Other software*** : Adobe Illustrator | Lightroom |Photoshop
+-***Programming Languages*** : HTML | CSS | Java | JavaScript | C 
+-***VCS*** : Git
+-***IDE*** : IntelliJ IDEA | Visual Studio Code
+-***Other software*** : Adobe Illustrator | Lightroom |Photoshop
 
 
 ## Code examples
