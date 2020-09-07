@@ -30,7 +30,7 @@ function even_or_odd(number) {
 
 My experience has been in creating several freelance projects, for example https://zor.by/
 
-### Education
+## Education
 
 | Educational institution                     | Specialization                |          Years  |
 |---------------------------------------------|:------------------------------|:---------------:|
