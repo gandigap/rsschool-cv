@@ -1,1 +1,1 @@
-https://gandigap.github.io/rsschool-cv/cv
+https://gandigap.github.io/rsschool-cv/
