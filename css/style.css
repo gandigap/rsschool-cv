@@ -1,182 +1,560 @@
-@font-face {
-    font-family: "Roboto-Regular";
-  
-    src: url("assets/fonts/Roboto-Regular.ttf") format("truetype");
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
-body {
-    background-color: #fff;    
-    color: white;
-    font-family: 'Roboto', sans-serif;   
-    margin: 0 auto;
-    max-width: 1024px;
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
-/*font h1 -h6 */
-a {
-    color: grey;
-}
-h1 {
-    font-size: 2em;
-}
-h2 {
-    font-size: 1.5em;
-}
-h3 {
-    font-size: 1.17em;
-}
-h4 {
-    font-size: 1em;
-}
-h5 {
-    font-size: 0.83em;
-}
-h6 {
-    font-size: 0.67em;
+:focus, :active {
+  outline: none;
 }
 
-.wrapper{
-    background-color: grey;
-    
-    text-align: center;
-    height: 100vh;
-    width: 90%;    
-    margin: 0 5% 0 5%;
+a:focus, a:active {
+  outline: none;
 }
 
-header {
-    background-color: white;
-    color: grey;
-    display: flex;
-    justify-content: space-between;
-    height: auto;
-}
-/*______________________CONTACT______________________*/
-.s_contact {
-    margin: 30px 30px 0 30px;
-    width: 100%;
-}
-.s_contact h1{
-    text-align: center;
+nav, footer, header, aside {
+  display: block;
 }
 
-.contact_info{
-    text-align: left;
-    margin: 30px;
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 10px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
-
-
-.contact_info ul {
-    list-style: disc;
-    margin: 0 20px;
-}
-.contact_info li{
-    text-align: left;
-    margin: 5px 0 5px;
+input, button, textarea {
+  font-family: inherit;
 }
 
-.contact_info h2{
-    text-align: left;
-    margin: 10px 0 10px;
+input::-ms-clear {
+  display: none;
 }
 
-figure {
-    margin: 0px 30px;   
-    display: flex;
-    align-items: center;
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
 }
 
 img {
-    width: 100%;
-    max-width: 150px;
-    min-width: 100px;
-    height: auto;
+  vertical-align: top;
 }
 
-main section {
-    border-top: 3px solid #fff;
-    text-align:initial;
-}
-main section h2 {
-    background: white;
-    color: grey;
-    width:200px;
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
 }
 
+/*--------------------*/
+/*
+--------Позиционирование
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: 100;
 
-.s_summary .quote {
-    border-left: 2px solid #ccc;
-    margin: 10px;
-    padding-left: 10px;
-    font-style: italic;
-    text-align: justify;
-    text-indent: 20px;
-}
-strong{
-    font-weight: 900;
-    color: black;
-}
+--------Блочная модель
+display: block;
+float: right;
+width: 100px;
+height: 100px;
+margin: 10px;
+padding: 10px;
 
-.s_experience p{
-    margin:10px;
-}
+--------Типографика
+font: normal 13px/1.5 "Arial", sans-serif;
+font-style: normal;
+font-size: 13px;
+line-height: 1.5;
+font-family: "Arial", sans-serif;
+text-align: center;
+color: #333333;
 
-.s_experience a{
-    color:black;
-}
+--------Оформление
+background-color: #f5f5f5;
+border: 1px solid #e5e5e5;
+border-radius: 3px;
+opacity: 1;
 
-.s_skills ul{
-    margin: 10px;
-}
+--------Анимация
+transition: color 1s;
 
-pre{
-    background-color: #c6c6c6;
-    width: 400px;
-    margin: 10px;
-    color: black;
-}
-
-.s_education{
-    height: auto;
-    background-color: grey;
-}
-
-.s_education p{
-    margin:10px;
-}
-
-.s_english{
-    text-align: justify;
-    text-indent: 20px;
-    background-color: grey;
-}
-
-.s_english p{
-    margin:10px;
-}
-
-table {    
-    font-size: 14px;    
-    text-align: left;
-    border-collapse: collapse;
-    background: #ededed;
-    margin: 10px;
-}
-table th {
-    color: black;    
-    font-weight: bold;
-    border-bottom: 1px solid grey;
-    border-right:1px solid grey;
-    padding: 12px 17px;
-}
-table td {
-  color: black;
-  border-bottom: 1px solid grey;
-  border-right:1px solid grey;
-  padding: 7px 17px;
+--------Разное
+will-change: auto;
+*/
+.visuallyhidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+  clip-path: inset(0px 0px 99.9% 99.9%);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  border: 0;
 }
 
-table tr:hover td {
-  text-decoration: underline;
+h1 {
+  /* Позиционирование */
+  /* Блочная модель */
+  /* Типографика */
+  font-size: 4.4rem;
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+
+h2 {
+  /* Позиционирование */
+  /* Блочная модель */
+  /* Типографика */
+  padding: 10px;
+  font-size: 3.5rem;
+  font-weight: 500;
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+
+h3 {
+  /* Позиционирование */
+  /* Блочная модель */
+  margin: 10px;
+  /* Типографика */
+  font-weight: 500;
+  font-size: 2.4rem;
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+
+h4 {
+  /* Позиционирование */
+  /* Блочная модель */
+  /* Типографика */
+  font-size: 2rem;
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+
+p {
+  /* Позиционирование */
+  /* Блочная модель */
+  margin: 10px;
+  /* Типографика */
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+
+body {
+  /* Позиционирование */
+  /* Блочная модель */
+  width: 100%;
+  /* Типографика */
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+  /* Оформление */
+  background-color: #1c4995;
+  /* Анимация */
+  /* Разное */
+}
+
+.wrapper {
+  /* Позиционирование */
+  /* Блочная модель */
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* Типографика */
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+
+.container {
+  /* Позиционирование */
+  /* Блочная модель */
+  flex: 1 1 40%;
+  height: 300px;
+  min-width: 240px;
+  /* Типографика */
+  font-size: 1.6rem;
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+
+.header__photo {
+  /* Позиционирование */
+  /* Блочная модель */
+  text-align: center;
+  height: 100%;
+  /* Типографика */
+  /* Оформление */
+  background-color: #ffcc00;
+  /* Анимация */
+  /* Разное */
+}
+.header__photo figcaption {
+  /* Позиционирование */
+  /* Блочная модель */
+  /* Типографика */
+  font-size: 2.4rem;
+  font-weight: 700;
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+.header__photo img {
+  /* Позиционирование */
+  /* Блочная модель */
+  /* Типографика */
+  /* Оформление */
+  border-radius: 50%;
+  /* Анимация */
+  /* Разное */
+}
+
+.header {
+  /* Позиционирование */
+  /* Блочная модель */
+  /* Типографика */
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+.header__content__item {
+  /* Позиционирование */
+  /* Блочная модель */
+  height: 100%;
+  /* Типографика */
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+.header__contacts h2 {
+  /* Позиционирование */
+  /* Блочная модель */
+  /* Типографика */
+  /* Оформление */
+  color: #ffcc00;
+  /* Анимация */
+  /* Разное */
+}
+.header__contacts__list {
+  /* Позиционирование */
+  /* Блочная модель */
+  margin: 10px;
+  /* Типографика */
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+.header__contacts__list__icon {
+  /* Позиционирование */
+  /* Блочная модель */
+  /* Типографика */
+  /* Оформление */
+  background-color: #ffcc00;
+  border-radius: 50%;
+  /* Анимация */
+  /* Разное */
+}
+.header__contacts__list li > a {
+  /* Позиционирование */
+  /* Блочная модель */
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  /* Типографика */
+  color: #ffffff;
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+.header__contacts__list li > a > img {
+  /* Позиционирование */
+  /* Блочная модель */
+  width: 30px;
+  margin-right: 10px;
+  /* Типографика */
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+.header__contacts__list li > a:hover {
+  /* Позиционирование */
+  /* Блочная модель */
+  /* Типографика */
+  color: #ffcc00;
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+.header__contacts__list li > a:hover > img {
+  /* Позиционирование */
+  /* Блочная модель */
+  /* Типографика */
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.9);
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+
+.main__summary {
+  /* Позиционирование */
+  /* Блочная модель */
+  height: 100%;
+  /* Типографика */
+  /* Оформление */
+  background-color: #000000;
+  /* Анимация */
+  /* Разное */
+}
+
+.main__summary > h2 {
+  /* Позиционирование */
+  /* Блочная модель */
+  /* Типографика */
+  color: #ffffff;
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+
+.main__summary > blockquote {
+  /* Позиционирование */
+  /* Блочная модель */
+  padding: 10px;
+  margin: 10px;
+  /* Типографика */
+  border-left: 3px solid #ffcc00;
+  color: #ffcc00;
+  font-style: italic;
+  text-indent: 20px;
+  text-align: justify;
+  font-family: serif;
+  letter-spacing: 0.06rem;
+}
+
+/* Оформление */
+/* Анимация */
+/* Разное */
+.main__skills {
+  /* Позиционирование */
+  /* Блочная модель */
+  height: 100%;
+  /* Типографика */
+  /* Оформление */
+  background-color: #ffcc00;
+  /* Анимация */
+  /* Разное */
+}
+
+.main__skills h2 {
+  /* Позиционирование */
+  /* Блочная модель */
+  /* Типографика */
+  /* Оформление */
+  color: #1c4995;
+  /* Анимация */
+  /* Разное */
+}
+
+.main__skills__list {
+  /* Позиционирование */
+  /* Блочная модель */
+  margin: 10px;
+  /* Типографика */
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+
+.main__skills__list span {
+  /* Позиционирование */
+  /* Блочная модель */
+  /* Типографика */
+  color: #1c4995;
+  font-style: italic;
+  font-weight: 700;
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+
+.main__code {
+  /* Позиционирование */
+  /* Блочная модель */
+  height: 100%;
+  /* Типографика */
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+
+.main__code h2 {
+  /* Позиционирование */
+  /* Блочная модель */
+  /* Типографика */
+  color: #ffcc00;
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+
+.main__code pre {
+  /* Позиционирование */
+  /* Блочная модель */
+  margin: 10px;
+  /* Типографика */
+  white-space: pre-wrap;
+  color: #ffffff;
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+
+.main__experience {
+  /* Позиционирование */
+  /* Блочная модель */
+  height: 100%;
+  /* Типографика */
+  /* Оформление */
+  background-color: #000000;
+  /* Анимация */
+  /* Разное */
+}
+.main__experience h2 {
+  /* Позиционирование */
+  /* Блочная модель */
+  /* Типографика */
+  color: #ffffff;
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+.main__experience p {
+  /* Позиционирование */
+  /* Блочная модель */
+  margin: 10px;
+  /* Типографика */
+  color: #ffcc00;
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+.main__experience a {
+  /* Позиционирование */
+  /* Блочная модель */
+  font-style: italic;
+  /* Типографика */
+  color: #ffffff;
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+
+.main__education {
+  /* Позиционирование */
+  /* Блочная модель */
+  height: 100%;
+  /* Типографика */
+  /* Оформление */
+  background-color: #ffcc00;
+  /* Анимация */
+  /* Разное */
+}
+.main__education table {
+  /* Позиционирование */
+  /* Блочная модель */
+  margin: 10px;
+  /* Типографика */
+  /* Оформление */
+  border: 1px solid #1c4995;
+  /* Анимация */
+  /* Разное */
+}
+.main__education td {
+  /* Позиционирование */
+  /* Блочная модель */
+  /* Типографика */
+  text-align: center;
+  /* Оформление */
+  border: 1px solid #1c4995;
+  /* Анимация */
+  /* Разное */
+}
+.main__education th {
+  /* Позиционирование */
+  /* Блочная модель */
+  /* Типографика */
+  color: #ffffff;
+  /* Оформление */
+  background-color: #1c4995;
+  /* Анимация */
+  /* Разное */
+}
+
+.main__english {
+  /* Позиционирование */
+  /* Блочная модель */
+  height: 100%;
+  /* Типографика */
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+.main__english h2 {
+  /* Позиционирование */
+  /* Блочная модель */
+  /* Типографика */
+  color: #ffcc00;
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
+}
+.main__english p {
+  /* Позиционирование */
+  /* Блочная модель */
+  /* Типографика */
+  text-indent: 20px;
+  color: #ffffff;
+  text-align: justify;
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
 }
